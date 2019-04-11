@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <title>Bowie Persona | Big Five Psychology | Bowie Lyric Analysis</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/personality.css" />
+    <meta name="keywords" content="bowie, david-bowie, ziggy-stardust, lazarus, thin-white-duke, major-tom, big-5, psychology-in-music">
+    <meta name="description" content="Psychology Analysis of David Bowies Lyrics">
+</head>
+
+<body class="persona" onload="drawChart()">
+    <div id="fb-root"></div>
+    <div class="banner">
+        <div class="home" onClick="window.open('../../');"><img class="homeicon" src="images/home.svg">Home</div>
+        <div class="title"><img class="blackstar" src="images/bs.png"> </div>
+        <div class="social">
+            <div class="twit">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="antonmc" data-hashtags="BowiePersona">Tweet</a></div>
+            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+        </div>
+    </div>
+
+    <div id="banner" class="banner-image">
+
+
+
+    </div>
+
+    <div class="floatingbox">
+        <div class="avatar-container">
+            <div class="avatar-mid"></div>
+            <div class="avatar-right"></div>
+        </div>
+    </div>
+
+    <div class="meta">
+        <div class="avatar-left">
+            <div class="avatar-canopy">
+                <div id="avatar" class="avatar"></div>
+            </div>
+        </div>
+        <div class="meta-bar">
+            <div class="words">
+                <div class="label">WORD COUNT</div>
+                <div id="word-count" class="count" style="color: rgb(123, 194, 83);">6000</div>
+            </div>
+            <div class="following">
+                <div class="label">FOLLOWING</div>
+                <div id="word-count" class="count" style="color: rgb(123, 194, 83);">9</div>
+            </div>
+            <div class="followers">
+                <div class="label">FOLLOWERS</div>
+                <div id="word-count" class="count" style="color: rgb(123, 194, 83);">9</div>
+            </div>
+            <div class="likes">
+                <div class="label">LIKES</div>
+                <div id="word-count" class="count" style="color: rgb(123, 194, 83);">9</div>
+            </div>
+        </div>
+        <div class="meta-pad"></div>
+    </div>
+    <div class="columns">
+        <div class="left">
+            <div id="personaName" class="personaName"></div>
+            <div id="twitterName" class="twitterName">by @antonmc</div>
+            <div id="description" class="description"></div>
+            <div class="location"><img class="map" src="images/location.svg">
+                <div class="place" id="location"></div>
+            </div>
+            <div class="location"><img class="map" src="images/calendar.svg">
+                <div class="place" id="date"></div>
+            </div>
+            <div class="location"><img class="map" src="images/speaker.svg">
+                <div class="place" id="date">Albums</div>
+            </div>
+
+            <div class="albums" id="albums"></div>
+            <div class="location"><img class="map" src="images/video.svg">
+                <div class="place" id="date">Video</div>
+            </div>
+            <iframe class="video" id="video" width="260" height="160" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="middle" id="tweets">
+            <div class="tweetHeading">
+                <div class="tweetHeadinglabel">Personality</div>
+            </div>
+            <div class="tweet">
+                <div class="icon"><img src="images/lyrics.svg" class="lyricsimage"></div>
+                <div class="content">
+                    <div class="from">
+                        <div class="fullname">Lyrics</div>
+                        <div class="fromName">@Lyrics</div>
+                        <div class="fromName"> - </div>
+                        <div class="fromName">Mar 29</div>
+                    </div>
+                    <div class="tweetContent">The following diagrams are a psychological analyis of the lyrics in Bowie's albums. <a target="_blank" href="http://www.azlyrics.com/b/bowie.html#2204">You can explore his lyrics here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="sidebar">
+                <div class="follow">Big five traits</div>
+                <div id="personaChart"></div>
+            </div>
+            <div id="whotofollow" class="sidebar">
+                <div class="follow">Who to follow</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="./javascript/personality.js"></script>
+<script>
+    ! function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');
+</script>
+<script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=649194155220548 ";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+</html>
