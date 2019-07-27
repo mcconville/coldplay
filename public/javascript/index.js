@@ -39,14 +39,25 @@ function initializeTraitPickers(personalityid){
 
   personality.forEach(function(trait){
     var traitselect = document.getElementById(selectid + selectcount);
-
     traitselect.innerHTML = "";
+
+    var percentile = Math.round(trait.percentile * 100);
+
+    // Math.round(parseInt(trait.percentile)*100)
 
     var newoption = document.createElement('option');
     newoption.innerHTML = trait.name;
     newoption.type = 'parent';
-    newoption.value = trait.name;
+    newoption.value = percentile;
+    // newoption.value = ;
     traitselect.appendChild(newoption);
+
+    var datalabel = document.getElementById('data' + selectcount);
+    datalabel.innerHTML = percentile + '%';
+
+
+
+
 
     selectcount++;
   })
