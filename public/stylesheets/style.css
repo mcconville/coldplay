@@ -13,15 +13,14 @@
 }
 
 .title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: #0D0A09;
 }
 
 .subtitle {
   margin-left: 15px;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 20px;
   color: #9B9B9B;
 }
 
@@ -99,7 +98,7 @@
 }
 
 .datavalue {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   margin: 20px;
   font-weight: bold;
@@ -153,13 +152,14 @@
 
 .anchor {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .albumname {
-  padding-right: 20px;
   font-size: 24px;
   font-weight: bold;
   color: #EA4829;
@@ -220,4 +220,17 @@
   color: #0D0A09;
   font-size: 16px;
   padding-right: 5px;
+}
+
+input, textarea, select, a { outline: none; }
+
+.traitselect{
+  border: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #0D0A09;
+    background: #f6f0eb;
+    text-align: right;
+    /* height: 30px; */
+    font-weight: bold;
 }

@@ -19,23 +19,16 @@
         <div class="subtitle">LYRICS PSYCHOLOGY</div>
       </div>
       <div class="anchor">
-      <div class="albumname">
-        <label class="pickerlabel">ALBUM:</label>
-        <select class="albumpicker">
-          <option value="parachutes">parachutes</option>
-          <option value="rushofblood">rush of blood</option>
-          <option value="xandy">X&Y</option>
-          <option value="vivca">viva la vida</option>
-          <option value="vivca">Mylo Xyloto</option>
-          <option value="vivca">Ghost Stories</option>
-          <option value="vivca">Head full of dreams</option>
-        </select></div>
+        <div class="albumname">
+          <label class="pickerlabel">ALBUM:</label>
+          <select id="albumpicker" class="albumpicker">
+          </select></div>
       </div>
     </div>
     <div class="columns">
       <div class="column">
         <div class="data">
-          <label class="datalabel">EMOTIONAL RANGE</label>
+          <select id="select0" class="traitselect"></select>
           <div class="datavalue">75%</div>
         </div>
         <div class="bar">
@@ -49,7 +42,7 @@
       </div>
       <div class="column">
         <div class="data">
-          <label class="datalabel">OPENNESS</label>
+          <select id="select1" class="traitselect"></select>
           <div class="datavalue">56%</div>
         </div>
         <div class="bar">
@@ -64,12 +57,12 @@
 
       <div class="column">
         <div class="pic">
-          <img src="images/svg/parachutes.svg" class="chris"></img>
+          <img id="chris" src="./images/svg/parachutes.svg" class="chris"></img>
         </div>
       </div>
       <div class="column">
         <div class="data">
-          <label class="datalabel">CONSCIENCIOUSNESS</label>
+          <select id="select2" class="traitselect"></select>
           <div class="datavalue">70%</div>
         </div>
         <div class="bar">
@@ -83,7 +76,7 @@
       </div>
       <div class="column">
         <div class="data">
-          <label class="datalabel">EXTRAVERSION</label>
+          <select id="select3" class="traitselect"></select>
           <div class="datavalue">52%</div>
         </div>
         <div class="bar">
@@ -97,7 +90,7 @@
       </div>
       <div class="column">
         <div class="data">
-          <label class="datalabel">AGREEABLENESS</label>
+          <select id="select4" class="traitselect"></select>
           <div class="datavalue">60%</div>
         </div>
         <div class="bar">
@@ -155,7 +148,7 @@
     </div>
   </div>
 </body>
-<script src="./javascript/carousel.js"></script>
+<script src="./javascript/index.js"></script>
 
 </html>
 <html>

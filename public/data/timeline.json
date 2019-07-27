@@ -1,43 +1,43 @@
-[{ "order":5
-    "album": "Mylo Xyloto",
+[{ "order":5,
+    "title":"Mylo Xyloto",
     "year":2011,
-    "key":"myloxyloto",
+    "key":"mylo",
     "image":"mylo.svg"
   },
   {"order":1,
-    "album": "Parachutes",
+    "title": "Parachutes",
     "year":2000,
     "key":"parachutes",
     "image":"parachutes.svg"
   },
   {"order":2,
-    "album": "A Rush Of Blood To The Head",
+    "title": "A Rush Of Blood To The Head",
     "year":2002,
-    "key":"arushofbloodtothehead",
+    "key":"rush",
     "image":"rush.svg"
   },
   {"order":7,
-    "album": "A Head Full Of Dreams",
+    "title": "A Head Full Of Dreams",
     "year":2015,
-    "key":"headfullofdreams",
+    "key":"dreams",
     "image":"dreams.svg"
   },
   {"order":3,
-    "album": "X And Y",
+    "title": "X And Y",
     "year":2005,
     "key":"xandy",
     "image":"xandy.svg"
   },
   {"order":4,
-    "album": "Viva La Vida",
+    "title": "Viva La Vida",
     "year":2008,
-    "key":"vivalavida",
+    "key":"viva",
     "image":"viva.svg"
   },
   {"order":6,
-    "album": "Ghost Stories",
+    "title":"Ghost Stories",
     "year":2014,
-    "key":"ghoststories",
+    "key":"ghost",
     "image":"ghost.svg"
   }
 ]
