@@ -4,18 +4,9 @@ var insights = [];
 var chris = document.getElementById('chris');
 
 function changeSelect(reference) {
-  console.log(reference);
-
   var selector = document.getElementById('select' + reference);
   var percentile = selector[selector.selectedIndex].value;
-
-  var datalabel = document.getElementById('data' + reference);
-  datalabel.innerHTML = percentile + '%';
-  var whitespace = document.getElementById('whitespace' + reference);
-  var gap = 100 - percentile;
-  whitespace.style.height = gap + '%';
-  var filled = document.getElementById('filled' + reference);
-  filled.style.height = percentile + '%';
+  setBarCharts(reference, percentile);
 }
 
 function dataReader() {
@@ -48,15 +39,7 @@ function dataReader() {
   initializeTraitPickers(albumpicker.value);
 }
 
-function addOption(trait, selectcount, traitselect) {
-  var percentile = Math.round(trait.percentile * 100);
-
-  var newoption = document.createElement('option');
-  newoption.innerHTML = trait.name;
-  newoption.type = 'parent';
-  newoption.value = percentile;
-  traitselect.appendChild(newoption);
-
+function setBarCharts(selectcount, percentile){
   var datalabel = document.getElementById('data' + selectcount);
   datalabel.innerHTML = percentile + '%';
   var whitespace = document.getElementById('whitespace' + selectcount);
@@ -64,6 +47,16 @@ function addOption(trait, selectcount, traitselect) {
   whitespace.style.height = gap + '%';
   var filled = document.getElementById('filled' + selectcount);
   filled.style.height = percentile + '%';
+}
+
+function addOption(trait, selectcount, traitselect) {
+  var percentile = Math.round(trait.percentile * 100);
+  var newoption = document.createElement('option');
+  newoption.innerHTML = trait.name;
+  newoption.type = 'parent';
+  newoption.value = percentile;
+  traitselect.appendChild(newoption);
+  setBarCharts(selectcount, percentile);
 }
 
 function initializeTraitPickers(personalityid) {
@@ -85,11 +78,8 @@ function initializeTraitPickers(personalityid) {
   })
 
   var src = "./images/svg/" + personalityid + ".svg"
-
   chris.src = src;
   chris.style.opacity = 1;
-
-
 }
 
 function insightsReader() {
@@ -101,13 +91,14 @@ function insightsReader() {
   })
 }
 
-
+/* Read the personality insights data */
 
 var dataRequest = new XMLHttpRequest();
 dataRequest.addEventListener("load", insightsReader);
 dataRequest.open("GET", "./data/coldplay.json");
 dataRequest.send();
 
+/* read the Coldplay timeline data */
 
 var dataRequest = new XMLHttpRequest();
 dataRequest.addEventListener("load", dataReader);
