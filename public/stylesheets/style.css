@@ -61,6 +61,7 @@
 
 .chris {
   height: 100%;
+  transition: opacity .5s ease-in-out;
 }
 
 .columns {
@@ -126,9 +127,21 @@
   height: 100%;
 }
 
-.whitespace {}
+.whitespace {
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  -ms-transition: height 1s ease;
+  transition: height 1s ease;
+}
 
-.filledspace {}
+.filledspace {
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  -ms-transition: height 1s ease;
+  transition: height 1s ease;
+}
 
 .range {
   background: #4BB066;
@@ -152,11 +165,11 @@
 
 .anchor {
   display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    margin-left: 15px;
-    margin-right: 15px;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .albumname {
@@ -216,21 +229,24 @@
   font-weight: bold;
 }
 
-.pickerlabel{
+.pickerlabel {
   color: #0D0A09;
   font-size: 16px;
   padding-right: 5px;
 }
 
-input, textarea, select, a { outline: none; }
+input, textarea, select, a {
+  outline: none;
+}
 
-.traitselect{
+.traitselect {
   border: none;
-    font-size: 10px;
-    text-transform: uppercase;
-    color: #0D0A09;
-    background: #f6f0eb;
-    text-align: right;
-    /* height: 30px; */
-    font-weight: bold;
+  font-size: 9px;
+  height: 20px;
+  text-transform: uppercase;
+  color: #0D0A09;
+  background: #f6f0eb;
+  text-align: right;
+  /* height: 30px; */
+  font-weight: bold;
 }
