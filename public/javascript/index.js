@@ -18,28 +18,35 @@ function dataReader() {
 
   var albumpicker = document.getElementById('albumpicker');
 
+  var timelinepanel = document.getElementById('timeline');
+
   albums.forEach(function(record) {
     var option = document.createElement('option');
     option.value = record.key;
     option.innerHTML = record.title;
     albumpicker.appendChild(option);
     console.log(record.title);
+
+    var milestone = document.createElement('li');
+    milestone.className = "milestone";
+    milestone.innerHTML = '<div class="milestonedot"></div>' +
+      '<label class="milestoneyear">' + record.year + '</label>' +
+      '<label class="milestonealbum">' + record.title + '</label>';
+
+    timelinepanel.append(milestone);
   })
 
   albumpicker.onchange = function(event) {
     console.log(event.target.value);
     console.log(insights[event.target.value]);
-
-
     chris.style.opacity = 0;
     initializeTraitPickers(event.target.value);
-    // chris.style.opacity = 1;
   }
 
   initializeTraitPickers(albumpicker.value);
 }
 
-function setBarCharts(selectcount, percentile){
+function setBarCharts(selectcount, percentile) {
   var datalabel = document.getElementById('data' + selectcount);
   datalabel.innerHTML = percentile + '%';
   var whitespace = document.getElementById('whitespace' + selectcount);
@@ -89,6 +96,13 @@ function insightsReader() {
   insightsdata.forEach(function(insight) {
     insights[insight.album] = insight;
   })
+
+  /* read the Coldplay timeline data */
+
+  var dataRequest = new XMLHttpRequest();
+  dataRequest.addEventListener("load", dataReader);
+  dataRequest.open("GET", "./data/timeline.json");
+  dataRequest.send();
 }
 
 /* Read the personality insights data */
@@ -96,11 +110,4 @@ function insightsReader() {
 var dataRequest = new XMLHttpRequest();
 dataRequest.addEventListener("load", insightsReader);
 dataRequest.open("GET", "./data/coldplay.json");
-dataRequest.send();
-
-/* read the Coldplay timeline data */
-
-var dataRequest = new XMLHttpRequest();
-dataRequest.addEventListener("load", dataReader);
-dataRequest.open("GET", "./data/timeline.json");
 dataRequest.send();

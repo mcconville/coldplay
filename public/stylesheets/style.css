@@ -168,8 +168,8 @@
   flex-direction: row;
   align-items: center;
   align-content: center;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .albumname {
@@ -214,7 +214,11 @@
 .milestonealbum {
   text-transform: uppercase;
   margin-top: 20;
-  font-size: 14px;
+  font-size: 12px;
+  word-wrap: break-word;
+  max-width: 80px;
+  text-align: center;
+  min-height: 60px;
 }
 
 .albumpicker {
