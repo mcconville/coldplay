@@ -61,7 +61,7 @@
 
 .chris {
   height: 100%;
-  transition: opacity .5s ease-in-out;
+  /* transition: opacity .5s ease-in-out; */
 }
 
 .columns {

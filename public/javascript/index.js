@@ -10,7 +10,6 @@ function changeSelect(reference) {
 }
 
 function dataReader() {
-  console.log(this.responseText);
 
   var coldplaydata = JSON.parse(this.responseText);
 
@@ -25,7 +24,6 @@ function dataReader() {
     option.value = record.key;
     option.innerHTML = record.title;
     albumpicker.appendChild(option);
-    console.log(record.title);
 
     var milestone = document.createElement('li');
     milestone.className = "milestone";
@@ -37,9 +35,8 @@ function dataReader() {
   })
 
   albumpicker.onchange = function(event) {
-    console.log(event.target.value);
-    console.log(insights[event.target.value]);
-    chris.style.opacity = 0;
+
+    // chris.style.opacity = 0;
     initializeTraitPickers(event.target.value);
   }
 
@@ -86,11 +83,11 @@ function initializeTraitPickers(personalityid) {
 
   var src = "./images/svg/" + personalityid + ".svg"
   chris.src = src;
-  chris.style.opacity = 1;
+  // chris.style.opacity = 1;
 }
 
 function insightsReader() {
-  console.log(this.responseText);
+  // console.log(this.responseText);
   var insightsdata = JSON.parse(this.responseText);
 
   insightsdata.forEach(function(insight) {
