@@ -2,6 +2,8 @@
 
 Uses Watson Personality Insights to analyze the lyrical changes of the the band Coldplay. Experiments with CSS Houdini for visualizing the data.
 
+![Seven Ages of Chris Martin](sevenages.png)
+
 #### Getting Started
 
 This project plays with the CSS Houdini Paint API you can read more about it [here](https://developer.mozilla.org/en-US/docs/Web/Houdini).
