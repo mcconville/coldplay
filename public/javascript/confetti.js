@@ -63,4 +63,4 @@ class ConfettiPainter {
 }
 
 // Register our class under a specific name
-registerPaint('confettiarea', ConfettiPainter);
+registerPaint('confetti', ConfettiPainter);

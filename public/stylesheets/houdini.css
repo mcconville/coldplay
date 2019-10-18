@@ -1,55 +1,44 @@
 .range {
   background: none;
-  background-image: paint(confettiarea);
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+  background-image: paint(confetti);
   --confettiColor: #4BB066;
   --confettiLimit: 500;
-  --confettiSize: 8;
+  --confettiSize: 5;
   --movement: 0;
-
 }
 
 .openness {
   background: none;
-  background-image: paint(confettiarea);
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+  background-image: paint(confetti);
   --confettiColor: #F5C300;
   --confettiLimit: 500;
-  --confettiSize: 8;
+  --confettiSize: 5;
   --movement: 0;
 }
 
 .conscienciousness {
   background: none;
-  background-image: paint(confettiarea);
+  background-image: paint(confetti);
   --confettiColor: #EA4829;
   --confettiLimit: 500;
-  --confettiSize: 8;
+  --confettiSize: 5;
   --movement: 0;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
 }
 
 .extraversion {
   background: none;
-  background-image: paint(confettiarea);
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+  background-image: paint(confetti);
   --confettiColor: #E1297D;
   --confettiLimit: 500;
-  --confettiSize: 8;
+  --confettiSize: 5;
   --movement: 0;
 }
 
 .agreeableness {
   background: none;
-  background-image: paint(confettiarea);
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+  background-image: paint(confetti);
   --confettiColor: #45BADE;
   --confettiLimit: 500;
-  --confettiSize: 8;
+  --confettiSize: 5;
   --movement: 0;
 }

@@ -247,11 +247,19 @@ input, textarea, select, a {
   border: none;
   font-size: 9px;
   height: 20px;
-  min-width:150px;
+  min-width: 150px;
   text-transform: uppercase;
   color: #0D0A09;
   background: #f6f0eb;
   text-align: right;
   /* height: 30px; */
   font-weight: bold;
+}
+
+.btn {
+  border: 1px solid #ccc;
+  background: none;
+  border-radius: 3px;
+  height: 22px;
+  outline: none;
 }

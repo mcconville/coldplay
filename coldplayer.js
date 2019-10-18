@@ -33,15 +33,12 @@ albums.forEach( function(album){
         consumption_preferences: true
       }, function(err, response) {
         if (err) {
-          //            console.log('error:', err);
+          console.log('error:', err);
         } else {
 
           console.log(album);
-
           console.log( response)
-
           response.album = album;
-
           results.push(response);
 
           fs.writeFile('coldplay.json', JSON.stringify(results), function(err) {
