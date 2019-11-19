@@ -2,6 +2,7 @@ var albums;
 var insights = [];
 
 var dots = [];
+var milestones = [];
 
 var chris = document.getElementById('chris');
 
@@ -14,7 +15,13 @@ function changeSelect(reference) {
 function clearDots(){
   dots.forEach( function(dot){
     var d = document.getElementById(dot);
-    d.style.background = "#D8D8D8";
+    d.style.background = "#f094be";
+  })
+
+  milestones.forEach(function(milestone){
+    var d = document.getElementById(milestone);
+    d.style.color = "#f094be";
+    d.style.fontWeight = 'normal';
   })
 }
 
@@ -36,11 +43,13 @@ function dataReader() {
 
     var milestone = document.createElement('li');
     milestone.className = "milestone";
+    milestone.id = record.key + 'milestone';
     milestone.innerHTML = '<div id="' + record.key + 'dot" ' + 'class="milestonedot"></div>' +
       '<label class="milestoneyear">' + record.year + '</label>' +
       '<label class="milestonealbum">' + record.title + '</label>';
 
       dots.push(record.key + 'dot');
+      milestones.push(milestone.id);
 
     timelinepanel.append(milestone);
   })
@@ -95,7 +104,16 @@ function initializeTraitPickers(personalityid) {
   clearDots();
 
   var d = document.getElementById( personalityid + 'dot' );
-  d.style.background ='#333';
+  d.style.background ='#E1297D';
+
+  var m =  document.getElementById( personalityid + 'milestone' );
+if(m != null){
+
+  m.style.color = '#E1297D';
+  m.style.fontWeight = "bold";
+}
+
+
 
   var src = "./images/svg/" + personalityid + ".svg"
   chris.src = src;
@@ -143,12 +161,12 @@ document.querySelector('.btn').addEventListener('click', function(e) {
     window.clearInterval(myVar);
     automaticState = false;
     var toggle = document.getElementById('togglebutton');
-    toggle.innerHTML = 'switch to automatic';
+    toggle.innerHTML = 'SWITCH TO AUTOMATIC';
   }else{
     myVar = setInterval(myTimer, 5000);
     automaticState = true;
     var toggle = document.getElementById('togglebutton');
-    toggle.innerHTML = 'switch to exploration';
+    toggle.innerHTML = 'SWITCH TO MANUAL';
   }
 
   [].map.call(document.querySelectorAll('.click-target'), function(el) {

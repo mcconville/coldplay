@@ -13,14 +13,14 @@
 }
 
 .title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
-  color: #0D0A09;
+  color: #E1297D;
 }
 
 .subtitle {
   margin-left: 15px;
-  font-size: 20px;
+  font-size: 24px;
   color: #9B9B9B;
 }
 
@@ -99,9 +99,10 @@
 }
 
 .datavalue {
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
-  margin: 20px;
+  margin: 40px;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
@@ -177,6 +178,11 @@
   font-weight: bold;
   color: #EA4829;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .timeline {
@@ -198,17 +204,18 @@
 }
 
 .milestonedot {
-  width: 20px;
-  height: 20;
-  border-radius: 20px;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
   background: #D8D8D8;
   display: flex;
   margin: 20px;
+  margin-top: 10px;
 }
 
 .milestoneyear {
-  font-weight: bold;
-  font-size: 20px;
+  /* font-weight: bold; */
+  font-size: 16px;
 }
 
 .milestonealbum {
@@ -218,25 +225,28 @@
   word-wrap: break-word;
   max-width: 80px;
   text-align: center;
-  min-height: 60px;
+  min-height: 50px;
 }
 
 .albumpicker {
   border: none;
-  font-size: 16px;
+  font-size: 12px;
   text-transform: uppercase;
-  color: #0D0A09;
-  background: #f6f0eb;
-  min-width: 250px;
+  color: white;
+  background: #E1297D;
+  min-width: 270px;
   text-align: right;
-  height: 30px;
+  height: 24px;
   font-weight: bold;
+  /* border: 1px solid #EA4829; */
+  border-radius: 2px !important;
 }
 
 .pickerlabel {
-  color: #0D0A09;
+  color: #9B9B9B;
   font-size: 16px;
   padding-right: 5px;
+  font-weight: normal;
 }
 
 input, textarea, select, a {
@@ -257,9 +267,19 @@ input, textarea, select, a {
 }
 
 .btn {
-  border: 1px solid #ccc;
-  background: none;
+  border: none;
+  background: #E1297D;
   border-radius: 3px;
-  height: 22px;
+  height: 24px;
   outline: none;
+  margin: 5px;
+  min-width: 120px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.buttonblock {
+  display: flex;
+  flex-direction: row;
 }
