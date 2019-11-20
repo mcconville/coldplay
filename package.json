@@ -8,8 +8,9 @@
   "dependencies": {
     "cfenv": "^1.2.2",
     "express": "^4.16.4",
+    "ibm-watson": "^5.1.0",
     "line-reader": "^0.4.0",
-    "watson-developer-cloud": "^2.34.0"
+    "log4js": "^6.1.0"
   },
   "repository": {},
   "engines": {

@@ -15,14 +15,19 @@ var cfenv = require('cfenv');
 // create a new express server
 var app = express();
 
+var port = process.env.PORT || 8060;
+
 // serve the files out of ./public as our main files
 app.use(express.static(__dirname + '/public'));
 
 // get the app environment from Cloud Foundry
 var appEnv = cfenv.getAppEnv();
+var log4js = require('log4js');
+var logger = log4js.getLogger();
+
+logger.level = 'debug';
+logger.debug("launching coldplay lyrics project");
 
 // start server on the specified port and binding host
-app.listen(appEnv.port, '0.0.0.0', function() {
-  // print a message when the server starts listening
-  console.log("server starting on " + appEnv.url);
-});
+app.listen(port);
+logger.debug("Listening on port ", port);
