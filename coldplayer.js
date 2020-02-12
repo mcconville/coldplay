@@ -24,7 +24,7 @@ var results = [];
 
 albums.forEach( function(album){
 
-  fs.readFile(album + '.txt', 'utf8', function(err, data) {
+  fs.readFile('lyrics/' + album + '.txt', 'utf8', function(err, data) {
       if (err) throw err;
       console.log(data);
 

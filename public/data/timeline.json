@@ -39,5 +39,11 @@
     "year":2014,
     "key":"ghost",
     "image":"ghost.svg"
+  },
+  {"order":8,
+  "title": "Everyday Life",
+  "year": 2019,
+  "key":"everydaylife",
+  "image":"xandy.svg"
   }
 ]

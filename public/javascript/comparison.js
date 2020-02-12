@@ -258,7 +258,7 @@ function drawCharts() {
 
 function readCombinedData() {
 
-  var url = './samples/coldplay.json';
+  var url = './data/coldplay.json';
 
   var xmlhttp = new XMLHttpRequest();
 
