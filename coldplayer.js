@@ -18,7 +18,9 @@ var lineReader = require('line-reader');
 var fs = require('fs');
 var config = require('./config/credentials.json');
 const PersonalityInsightsV3 = require('ibm-watson/personality-insights/v3');
-const { IamAuthenticator } = require('ibm-watson/auth');
+const {
+  IamAuthenticator
+} = require('ibm-watson/auth');
 
 const personality_insights = new PersonalityInsightsV3({
   version: '2019-10-13',
@@ -30,49 +32,49 @@ const personality_insights = new PersonalityInsightsV3({
 
 var pi = config.personalityInsights;
 
-var albums=[
-    'parachutes',
-    'arushofbloodtothehead',
-    'xandy',
-    'vivalavida',
-    'myloxyloto',
-    'ghoststories',
-    'headfullofdreams'
+var albums = [
+  'parachutes',
+  'arushofbloodtothehead',
+  'xandy',
+  'vivalavida',
+  'myloxyloto',
+  'ghoststories',
+  'headfullofdreams'
 ]
 
 var results = [];
 
-albums.forEach( function(album){
+albums.forEach(function (album) {
 
-  fs.readFile('lyrics/' + album + '.txt', 'utf8', function(err, data) {
-      if (err) throw err;
-      console.log(data);
+  fs.readFile('lyrics/' + album + '.txt', 'utf8', function (err, data) {
+    if (err) throw err;
+    console.log(data);
 
-      const profileParams = {
-        // Get the content from the JSON file.
-        content: data,
-        contentType: 'text/plain',
-        consumptionPreferences: true,
-        rawScores: true,
-      };
+    const profileParams = {
+      // Get the content from the JSON file.
+      content: data,
+      contentType: 'text/plain',
+      consumptionPreferences: true,
+      rawScores: true,
+    };
 
-      personality_insights.profile(profileParams)
-    .then(response => {
+    personality_insights.profile(profileParams)
+      .then(response => {
 
         // console.log(JSON.stringify(profile, null, 2));
         console.log(album);
-        console.log( response)
+        console.log(response)
         response.album = album;
         results.push(response);
 
-        fs.writeFile('coldplay.json', JSON.stringify(results), function(err) {
+        fs.writeFile('coldplay.json', JSON.stringify(results), function (err) {
           if (err) {
             return console.log(err);
           }
         })
-    })
-    .catch(err => {
-      console.log('error:', err);
-    });
+      })
+      .catch(err => {
+        console.log('error:', err);
+      });
   });
 });
