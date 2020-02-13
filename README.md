@@ -16,26 +16,32 @@ This project uses [Node JS](https://nodejs.org/en/download/) as a run time envir
 
 #### Installing
 
-Assuming you have Node JS installed. Clone this repo, and cd into the folder you've cloned. You should see a file there called app.js
+1. Assuming you have Node JS installed. Clone this repo, and cd into the folder you've cloned. You should see a file there called app.js. Type the following to install the Node dependencies:
 
-type:
-
-```
+```bash
 npm install
 ```
 
-when the node dependencies have installed
+1. Rename `ibm-credentials.env.sample` to `ibm-credentials.env`, and fill your Personality Insights API key.
 
-```
-node app
-```
-
-You should see some output like this:
-
-```
-server starting on http://localhost:3000
+```ini
+PERSONALITY_INSIGHTS_IAM_APIKEY=<api-key>
 ```
 
 #### Running
 
+When the node dependencies have been installed, type the following to run the Node app:
+
+```bash
+npm start
+```
+
+You should see some output like this:
+
+```bash
+server starting on http://localhost:3000
+```
+
 #### Overview
+
+TODO

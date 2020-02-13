@@ -14,23 +14,9 @@
  * limitations under the License.
  */
 
-var lineReader = require('line-reader');
 var fs = require('fs');
-var config = require('./config/credentials.json');
 const PersonalityInsightsV3 = require('ibm-watson/personality-insights/v3');
-const {
-  IamAuthenticator
-} = require('ibm-watson/auth');
-
-const personality_insights = new PersonalityInsightsV3({
-  version: '2019-10-13',
-  authenticator: new IamAuthenticator({
-    apikey: config.personalityInsights.key,
-  }),
-  url: config.personalityInsights.url,
-});
-
-var pi = config.personalityInsights;
+const pi = new PersonalityInsightsV3();
 
 var albums = [
   'parachutes',
@@ -58,7 +44,7 @@ albums.forEach(function (album) {
       rawScores: true,
     };
 
-    personality_insights.profile(profileParams)
+    pi.profile(profileParams)
       .then(response => {
 
         // console.log(JSON.stringify(profile, null, 2));
