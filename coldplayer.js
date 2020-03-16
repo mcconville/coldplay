@@ -16,7 +16,10 @@
 
 var fs = require('fs');
 const PersonalityInsightsV3 = require('ibm-watson/personality-insights/v3');
-const pi = new PersonalityInsightsV3();
+const service = {
+  version: '2018-10-18',
+};
+const pi = new PersonalityInsightsV3(service);
 
 var albums = [
   'parachutes',
