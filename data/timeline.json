@@ -23,10 +23,10 @@
   },
   {
     "order": 2,
-    "era": "A Rush Of Blood To The Head",
+    "era": "A Rush of Blood to the Head",
     "albums": [
       {
-        "title": "A Rush Of Blood To The Head",
+        "title": "A Rush of Blood to the Head",
         "filename": "rush.txt",
         "songs": [],
         "cover": "",
@@ -70,7 +70,7 @@
     "era": "Viva La Vida",
     "albums": [
       {
-        "title": "Viva La Vida",
+        "title": "Viva la Vida or Death and All His Friends",
         "filename": "viva.txt",
         "songs": [],
         "cover": "",
@@ -133,10 +133,10 @@
   },
   {
     "order": 7,
-    "era": "A Head Full Of Dreams",
+    "era": "A Head Full of Dreams",
     "albums": [
       {
-        "title": "A Head Full Of Dreams",
+        "title": "A Head Full of Dreams",
         "filename": "dreams.txt",
         "songs": [],
         "cover": "",
@@ -177,10 +177,10 @@
   },
   {
     "order": 9,
-    "era": "Music Of The Spheres",
+    "era": "Music of the Spheres",
     "albums": [
       {
-        "title": "Music Of The Spheres",
+        "title": "Music of the Spheres",
         "filename": "spheres.txt",
         "songs": [],
         "cover": "",
