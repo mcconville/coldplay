@@ -1,0 +1,200 @@
+[
+  {
+    "order": 1,
+    "era": "Parachutes",
+    "albums": [
+      {
+        "title": "Parachutes",
+        "filename": "parachutes.txt",
+        "songs": [],
+        "cover": "",
+        "background": [],
+        "releaseMonth": "",
+        "releaseYear": 2011,
+        "link": ""
+      }
+    ],
+    "mood": "",
+    "sytle": "",
+    "start": 2011,
+    "end": 2013,
+    "image": "parachutes.svg",
+    "className": ""
+  },
+  {
+    "order": 2,
+    "era": "A Rush Of Blood To The Head",
+    "albums": [
+      {
+        "title": "A Rush Of Blood To The Head",
+        "filename": "rush.txt",
+        "songs": [],
+        "cover": "",
+        "background": [],
+        "releaseMonth": "",
+        "releaseYear": 2011,
+        "link": ""
+      }
+    ],
+    "mood": "",
+    "sytle": "",
+    "start": 2011,
+    "end": 2013,
+    "image": "rush.svg",
+    "className": ""
+  },
+  {
+    "order": 3,
+    "era": "X and Y",
+    "albums": [
+      {
+        "title": "X And Y",
+        "filename": "xandy.txt",
+        "songs": [],
+        "cover": "",
+        "background": [],
+        "releaseMonth": "",
+        "releaseYear": 2011,
+        "link": ""
+      }
+    ],
+    "mood": "",
+    "sytle": "",
+    "start": 2011,
+    "end": 2013,
+    "image": "xandy.svg",
+    "className": ""
+  },
+  {
+    "order": 4,
+    "era": "Viva La Vida",
+    "albums": [
+      {
+        "title": "Viva La Vida",
+        "filename": "viva.txt",
+        "songs": [],
+        "cover": "",
+        "background": [],
+        "releaseMonth": "",
+        "releaseYear": 2011,
+        "link": ""
+      }
+    ],
+    "mood": "",
+    "sytle": "",
+    "start": 2011,
+    "end": 2013,
+    "image": "viva.svg",
+    "className": ""
+  },
+  {
+    "order": 5,
+    "era": "Mylo Xyloto",
+    "albums": [
+      {
+        "title": "Mylo Xyloto",
+        "filename": "rush.txt",
+        "songs": [],
+        "cover": "",
+        "background": [],
+        "releaseMonth": "",
+        "releaseYear": 2011,
+        "link": ""
+      }
+    ],
+    "mood": "",
+    "sytle": "",
+    "start": 2011,
+    "end": 2013,
+    "image": "mylo.svg",
+    "className": ""
+  },
+  {
+    "order": 6,
+    "era": "Ghost Stories",
+    "albums": [
+      {
+        "title": "Ghost Stories",
+        "filename": "ghost.txt",
+        "songs": [],
+        "cover": "",
+        "background": [],
+        "releaseMonth": "",
+        "releaseYear": 2011,
+        "link": ""
+      }
+    ],
+    "mood": "",
+    "sytle": "",
+    "start": 2011,
+    "end": 2013,
+    "image": "ghost.svg",
+    "className": ""
+  },
+  {
+    "order": 7,
+    "era": "A Head Full Of Dreams",
+    "albums": [
+      {
+        "title": "A Head Full Of Dreams",
+        "filename": "dreams.txt",
+        "songs": [],
+        "cover": "",
+        "background": [],
+        "releaseMonth": "",
+        "releaseYear": 2011,
+        "link": ""
+      }
+    ],
+    "mood": "",
+    "sytle": "",
+    "start": 2011,
+    "end": 2013,
+    "image": "dreams.svg",
+    "className": ""
+  },
+  {
+    "order": 8,
+    "era": "Everyday Life",
+    "albums": [
+      {
+        "title": "Everyday Life",
+        "filename": "everyday.txt",
+        "songs": [],
+        "cover": "",
+        "background": [],
+        "releaseMonth": "",
+        "releaseYear": 2011,
+        "link": ""
+      }
+    ],
+    "mood": "",
+    "sytle": "",
+    "start": 2011,
+    "end": 2013,
+    "image": "everyday.svg",
+    "className": ""
+  },
+  {
+    "order": 9,
+    "era": "Music Of The Spheres",
+    "albums": [
+      {
+        "title": "Music Of The Spheres",
+        "filename": "spheres.txt",
+        "songs": [],
+        "cover": "",
+        "background": [],
+        "releaseMonth": "",
+        "releaseYear": 2011,
+        "link": ""
+      }
+    ],
+    "mood": "",
+    "sytle": "",
+    "start": 2011,
+    "end": 2013,
+    "image": "spheres.svg",
+    "className": ""
+  }
+]
