@@ -9,15 +9,15 @@
         "songs": [],
         "cover": "",
         "background": [],
-        "releaseMonth": "",
-        "releaseYear": 2011,
-        "link": ""
+        "releaseMonth": "July",
+        "releaseYear": 2000,
+        "link": "https://en.wikipedia.org/wiki/Parachutes_(Coldplay_album)"
       }
     ],
     "mood": "",
     "sytle": "",
-    "start": 2011,
-    "end": 2013,
+    "start": 2000,
+    "end": 2002,
     "image": "parachutes.svg",
     "className": ""
   },
@@ -31,37 +31,37 @@
         "songs": [],
         "cover": "",
         "background": [],
-        "releaseMonth": "",
+        "releaseMonth": "August",
         "releaseYear": 2011,
-        "link": ""
+        "link": "https://en.wikipedia.org/wiki/A_Rush_of_Blood_to_the_Head"
       }
     ],
     "mood": "",
     "sytle": "",
-    "start": 2011,
-    "end": 2013,
+    "start": 2002,
+    "end": 2005,
     "image": "rush.svg",
     "className": ""
   },
   {
     "order": 3,
-    "era": "X and Y",
+    "era": "X&Y",
     "albums": [
       {
-        "title": "X And Y",
+        "title": "X&Y",
         "filename": "xandy.txt",
         "songs": [],
         "cover": "",
         "background": [],
-        "releaseMonth": "",
-        "releaseYear": 2011,
-        "link": ""
+        "releaseMonth": "June",
+        "releaseYear": 2005,
+        "link": "https://en.wikipedia.org/wiki/X%26Y"
       }
     ],
     "mood": "",
     "sytle": "",
-    "start": 2011,
-    "end": 2013,
+    "start": 2005,
+    "end": 2008,
     "image": "xandy.svg",
     "className": ""
   },
@@ -75,15 +75,15 @@
         "songs": [],
         "cover": "",
         "background": [],
-        "releaseMonth": "",
-        "releaseYear": 2011,
-        "link": ""
+        "releaseMonth": "June",
+        "releaseYear": 2008,
+        "link": "https://en.wikipedia.org/wiki/Viva_la_Vida_or_Death_and_All_His_Friends"
       }
     ],
     "mood": "",
     "sytle": "",
-    "start": 2011,
-    "end": 2013,
+    "start": 2008,
+    "end": 2011,
     "image": "viva.svg",
     "className": ""
   },
@@ -97,15 +97,15 @@
         "songs": [],
         "cover": "",
         "background": [],
-        "releaseMonth": "",
+        "releaseMonth": "October",
         "releaseYear": 2011,
-        "link": ""
+        "link": "https://en.wikipedia.org/wiki/Mylo_Xyloto"
       }
     ],
     "mood": "",
     "sytle": "",
     "start": 2011,
-    "end": 2013,
+    "end": 2014,
     "image": "mylo.svg",
     "className": ""
   },
@@ -119,15 +119,15 @@
         "songs": [],
         "cover": "",
         "background": [],
-        "releaseMonth": "",
-        "releaseYear": 2011,
-        "link": ""
+        "releaseMonth": "May",
+        "releaseYear": 2014,
+        "link": "https://en.wikipedia.org/wiki/Ghost_Stories_(Coldplay_album)"
       }
     ],
     "mood": "",
     "sytle": "",
-    "start": 2011,
-    "end": 2013,
+    "start": 2014,
+    "end": 2015,
     "image": "ghost.svg",
     "className": ""
   },
@@ -141,15 +141,15 @@
         "songs": [],
         "cover": "",
         "background": [],
-        "releaseMonth": "",
-        "releaseYear": 2011,
-        "link": ""
+        "releaseMonth": "December",
+        "releaseYear": 2015,
+        "link": "https://en.wikipedia.org/wiki/A_Head_Full_of_Dreams"
       }
     ],
     "mood": "",
     "sytle": "",
-    "start": 2011,
-    "end": 2013,
+    "start": 2015,
+    "end": 2019,
     "image": "dreams.svg",
     "className": ""
   },
@@ -163,15 +163,15 @@
         "songs": [],
         "cover": "",
         "background": [],
-        "releaseMonth": "",
-        "releaseYear": 2011,
-        "link": ""
+        "releaseMonth": "November",
+        "releaseYear": 2019,
+        "link": "https://en.wikipedia.org/wiki/Everyday_Life_(Coldplay_album)"
       }
     ],
     "mood": "",
     "sytle": "",
-    "start": 2011,
-    "end": 2013,
+    "start": 2019,
+    "end": 2021,
     "image": "everyday.svg",
     "className": ""
   },
@@ -185,15 +185,15 @@
         "songs": [],
         "cover": "",
         "background": [],
-        "releaseMonth": "",
-        "releaseYear": 2011,
-        "link": ""
+        "releaseMonth": "October",
+        "releaseYear": 2021,
+        "link": "https://en.wikipedia.org/wiki/Music_of_the_Spheres_(Coldplay_album)"
       }
     ],
     "mood": "",
     "sytle": "",
-    "start": 2011,
-    "end": 2013,
+    "start": 2021,
+    "end": 2022,
     "image": "spheres.svg",
     "className": ""
   }
