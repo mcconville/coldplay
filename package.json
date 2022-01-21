@@ -8,7 +8,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "ibm-watson": "^5.1.0",
-    "log4js": "^6.1.0"
+    "log4js": "^6.4.0"
   },
   "repository": {},
   "engines": {
